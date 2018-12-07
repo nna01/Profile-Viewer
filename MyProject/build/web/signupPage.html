@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="index.html">News</a></li>
+  <li><a href="index.html">Contact</a></li>
+  <li><a href="index.html">About</a></li>
+  </ul>
+    
+  <div class="center">
+  
+  <h2>Sign Up for an Account</h2>
+  <form onsubmit="return myFunction()" action="Page1" method="post">
+   <input type="email" name="email" title="email" placeholder="Email" required/>
+    <input type="text" name="username" title="username" placeholder="Username" required/>
+    <input type="password" name="password" title="username" placeholder="Password" required/>
+    <input type="text" name="fname" title="Full Name" placeholder="Full Name" />
+    <p id="demo"></p>
+    <button type="submit" name="signup">Sign Up</button>
+   
+  </form>
+</div>
+    
+    <script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("username");
+
+    // If x is Not a Number or less than one or greater than 10
+    if (x.includes("@")) {
+        text = "Invalid Name";
+    } 
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+ 
+</body>
+
+</html>
